@@ -83,3 +83,19 @@ body{
     background-color: rgb(120, 7, 7);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 700px){
+    .stopwatch{
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .numbers div{
+        font-size: .5em;
+    }
+
+    .stopwatch .title{
+        font-size: 3em;
+    }
+}
