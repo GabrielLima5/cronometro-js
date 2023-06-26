@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color: #240048;
-    font-family: 'Xanh Mono', monospace;
+    background: linear-gradient(to right, #1cefff, #04bc89a3);     
+    font-family: 'Cutive Mono', monospace;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -16,11 +16,11 @@ body{
 }
 
 .stopwatch{
-    border-radius: 100px;
+    border-radius: 30px;
     color: white;
-    background-color: #6c06b8;
-    width: 700px;
-    height: 700px;
+    background-color: #005d55;
+    width: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -34,13 +34,13 @@ body{
 }
 
 .stopwatch .numbers{
-    font-size: 4em;
+    font-size: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .stopwatch .numbers .separator{
-    margin: 0 10px;
+    margin: 0 3px;
     font-weight: bold;
 }
 
@@ -82,4 +82,30 @@ body{
 .stopwatch .buttons .stop-btn:hover{
     background-color: rgb(120, 7, 7);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .stopwatch{
+        width: 500px;
+        padding: 10px;
+    }
+
+    .stopwatch .numbers{
+        font-size: 4em
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .stopwatch{
+        width: 320px;
+        height: 600px;
+    }
+
+    .stopwatch .title{
+        font-size: 3em
+    }
+
+    .stopwatch .numbers{
+        font-size: 2.8em;
+    }
 }
